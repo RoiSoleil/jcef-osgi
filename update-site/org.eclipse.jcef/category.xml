@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <bundle id="me.friwi.jcefmaven-osgi">
+      <category name="me.friwi.jcefmaven-osgi"/>
+   </bundle>
+   <category-def name="me.friwi.jcefmaven-osgi" label="JCEF Maven Eclipse integration"/>
+</site>
