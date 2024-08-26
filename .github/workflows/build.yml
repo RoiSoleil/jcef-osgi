@@ -8,14 +8,14 @@ jobs:
       runs-on: windows-latest
       steps:
       -  name: Checkout
-         uses: actions/checkout@v2
-      -  name: Set up JDK 17
-         uses: actions/setup-java@v2
+         uses: actions/checkout@v4
+      -  name: Set up JDK 21
+         uses: actions/setup-java@v4.2.2
          with:
             distribution: temurin
-            java-version: 17
+            java-version: 21
       -  name: Set up cache
-         uses: actions/cache@v1
+         uses: actions/cache@v4.0.2
          with:
            path: ~/.m2/repository
            key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
@@ -23,7 +23,7 @@ jobs:
              ${{ runner.os }}-maven-
       -  name: Build
          run: |
-            mvn clean bundle:bundle install
+            mvn clean install
          shell: bash
       -  name: Release
          uses: "marvinpinto/action-automatic-releases@latest"
