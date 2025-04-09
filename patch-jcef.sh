@@ -1,0 +1,101 @@
+#!/bin/bash
+set -e
+
+LOCAL_REPO=$(mvn help:evaluate -Dexpression=settings.localRepository -q -DforceStdout)
+
+GROUP_ID="me.friwi"
+
+JOGL_ALL_VERSION="v2.4.0-rc-20210111"
+JOGL_ALL_PATCHED_VERSION="2.4.0"
+
+GLUEGEN_RT_VERSION="v2.4.0-rc-20210111"
+GLUEGEN_RT_PATCHED_VERSION="2.4.0"
+
+JCEF_API_VERSION="jcef-1770317+cef-132.3.1+g144febe+chromium-132.0.6834.83"
+JCEF_API_PATCHED_VERSION="132.3.1"
+
+JCEF_NATIVES_WINDOWS_AMD64_VERSION="jcef-1770317+cef-132.3.1+g144febe+chromium-132.0.6834.83"
+JCEF_NATIVES_WINDOWS_AMD64_PATCHED_VERSION="132.3.1"
+
+JCEF_MAVEN_VERSION="132.3.1"
+
+mvn dependency:get \
+  -DgroupId=$GROUP_ID \
+  -DartifactId=jogl-all \
+  -Dversion=$JOGL_ALL_VERSION \
+  -Dtransitive=false
+
+JAR_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/jogl-all/$JOGL_ALL_VERSION/jogl-all-$JOGL_ALL_VERSION.jar"
+POM_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/jogl-all/$JOGL_ALL_VERSION/jogl-all-$JOGL_ALL_VERSION.pom"
+
+mvn install:install-file \
+  -DgroupId=$GROUP_ID \
+  -DartifactId=jogl-all \
+  -Dversion=$JOGL_ALL_PATCHED_VERSION \
+  -Dpackaging=jar \
+  -Dfile="$JAR_PATH" \
+  -DpomFile="$POM_PATH"
+
+mvn dependency:get \
+  -DgroupId=$GROUP_ID \
+  -DartifactId=gluegen-rt \
+  -Dversion=$GLUEGEN_RT_VERSION \
+  -Dtransitive=false
+
+JAR_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/gluegen-rt/$GLUEGEN_RT_VERSION/gluegen-rt-$GLUEGEN_RT_VERSION.jar"
+POM_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/gluegen-rt/$GLUEGEN_RT_VERSION/gluegen-rt-$GLUEGEN_RT_VERSION.pom"
+
+mvn install:install-file \
+  -DgroupId=$GROUP_ID \
+  -DartifactId=gluegen-rt \
+  -Dversion=$GLUEGEN_RT_PATCHED_VERSION \
+  -Dpackaging=jar \
+  -Dfile="$JAR_PATH" \
+  -DpomFile="$POM_PATH"
+
+mvn dependency:get \
+  -DgroupId=$GROUP_ID \
+  -DartifactId=jcef-api \
+  -Dversion=$JCEF_API_VERSION \
+  -Dtransitive=false
+
+JAR_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/jcef-api/$JCEF_API_VERSION/jcef-api-$JCEF_API_VERSION.jar"
+POM_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/jcef-api/$JCEF_API_VERSION/jcef-api-$JCEF_API_VERSION.pom"
+
+sed -i "s/$JOGL_ALL_VERSION/$JOGL_ALL_PATCHED_VERSION/g" $POM_PATH
+
+mvn install:install-file \
+  -DgroupId=$GROUP_ID \
+  -DartifactId=jcef-api \
+  -Dversion=$JCEF_API_PATCHED_VERSION \
+  -Dpackaging=jar \
+  -Dfile="$JAR_PATH" \
+  -DpomFile="$POM_PATH"
+
+mvn dependency:get \
+  -DgroupId=$GROUP_ID \
+  -DartifactId=jcef-natives-windows-amd64 \
+  -Dversion=$JCEF_NATIVES_WINDOWS_AMD64_VERSION \
+  -Dtransitive=false
+
+JAR_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/jcef-natives-windows-amd64/$JCEF_NATIVES_WINDOWS_AMD64_VERSION/jcef-natives-windows-amd64-$JCEF_NATIVES_WINDOWS_AMD64_VERSION.jar"
+POM_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/jcef-natives-windows-amd64/$JCEF_NATIVES_WINDOWS_AMD64_VERSION/jcef-natives-windows-amd64-$JCEF_NATIVES_WINDOWS_AMD64_VERSION.pom"
+
+mvn install:install-file \
+  -DgroupId=$GROUP_ID \
+  -DartifactId=jcef-natives-windows-amd64 \
+  -Dversion=$JCEF_NATIVES_WINDOWS_AMD64_PATCHED_VERSION \
+  -Dpackaging=jar \
+  -Dfile="$JAR_PATH" \
+  -DpomFile="$POM_PATH"
+
+mvn dependency:get \
+  -DgroupId=$GROUP_ID \
+  -DartifactId=jcefmaven \
+  -Dversion=$JCEF_MAVEN_VERSION \
+  -Dtransitive=false
+
+JAR_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/jcefmaven/$JCEF_MAVEN_VERSION/jcefmaven-$JCEF_MAVEN_VERSION.jar"
+POM_PATH="$LOCAL_REPO/$(echo $GROUP_ID | tr '.' '/')/jcefmaven/$JCEF_MAVEN_VERSION/jcefmaven-$JCEF_MAVEN_VERSION.pom"
+
+sed -i "s/$JCEF_API_VERSION/$JCEF_API_PATCHED_VERSION/g" $POM_PATH

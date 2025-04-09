@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="tp">
+  <locations>
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCEF Windows" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>me.friwi</groupId>
+          <artifactId>jcef-natives-windows-amd64</artifactId>
+          <version>132.3.1</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>me.friwi</groupId>
+          <artifactId>jcefmaven</artifactId>
+          <version>132.3.1</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+      <instructions><![CDATA[
+Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
+version:               ${version_cleanup;${mvnVersion}}
+Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
+Bundle-Version:        ${version}
+Import-Package:        *;resolution:=optional
+Export-Package:        *;version="${version}";-noimport:=true
+]]></instructions>
+    </location>
+  </locations>
+  <includeBundles>
+    <plugin id="com.google.errorprone.annotations"/>
+    <plugin id="com.google.errorprone.annotations.source"/>
+    <plugin id="com.google.gson"/>
+    <plugin id="com.google.gson.source"/>
+    <plugin id="me.friwi.gluegen-rt"/>
+    <plugin id="me.friwi.gluegen-rt.source"/>
+    <plugin id="me.friwi.jcefmaven"/>
+    <plugin id="me.friwi.jcefmaven.source"/>
+    <plugin id="me.friwi.jogl-all"/>
+    <plugin id="me.friwi.jogl-all.source"/>
+    <plugin id="org.apache.commons.commons-codec"/>
+    <plugin id="org.apache.commons.commons-codec.source"/>
+    <plugin id="org.apache.commons.commons-compress"/>
+    <plugin id="org.apache.commons.commons-compress.source"/>
+    <plugin id="org.apache.commons.commons-io"/>
+    <plugin id="org.apache.commons.commons-io.source"/>
+    <plugin id="org.apache.commons.lang3"/>
+    <plugin id="org.apache.commons.lang3.source"/>
+  </includeBundles>
+</target>

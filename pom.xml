@@ -9,7 +9,6 @@
   <artifactId>root</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>bundles/me.friwi.jcefmaven-osgi</module>
-    <module>update-site/org.eclipse.jcef</module>
+    <module>tp</module>
   </modules>
 </project>

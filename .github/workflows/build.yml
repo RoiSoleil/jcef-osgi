@@ -3,6 +3,7 @@ on:
    push:
       branches:
       - main
+permissions: write-all
 jobs:
    build:
       runs-on: windows-latest
@@ -21,6 +22,10 @@ jobs:
            key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
            restore-keys: |
              ${{ runner.os }}-maven-
+      -  name: Patch JCEF version
+         run: |
+            ./patch-jcef.sh
+         shell: bash
       -  name: Build
          run: |
             mvn clean install
@@ -33,7 +38,7 @@ jobs:
              prerelease: true
              title: "Development Build"
              files: |
-               ./update-site/org.eclipse.jcef/target/org.eclipse.jcef.updatesite-*-SNAPSHOT.zip
+               ./tp/target/target-platform-repository/*
       -  name: Publish p2 update site
          env:
             ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
@@ -44,7 +49,7 @@ jobs:
             git config user.name "RoiSoleil"
             git config user.email "helios.gilles@gmail.com"
             rm -fr *
-            cp -r ../../update-site/org.eclipse.jcef/target/repository/* .
+            cp -r ../../tp/target/target-platform-repository/* .
             git add .
             git commit -m "New version of the update site"
             git push -f https://RoiSoleil:$ACTIONS_TOKEN@github.com/RoiSoleil/jcef-osgi update-site
