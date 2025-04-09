@@ -31,15 +31,6 @@ jobs:
          run: |
             mvn --batch-mode clean install
          shell: bash
-      -  name: Release
-         uses: "marvinpinto/action-automatic-releases@latest"
-         with:
-             repo_token: "${{ secrets.GITHUB_TOKEN }}"
-             automatic_release_tag: "latest"
-             prerelease: true
-             title: "Development Build"
-             files: |
-               ./tp/target/target-platform-repository/*
       -  name: Publish p2 update site
          env:
             ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
