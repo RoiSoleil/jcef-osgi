@@ -29,7 +29,7 @@ jobs:
          shell: bash
       -  name: Build
          run: |
-            mvn clean install
+            mvn --batch-mode clean install
          shell: bash
       -  name: Release
          uses: "marvinpinto/action-automatic-releases@latest"
