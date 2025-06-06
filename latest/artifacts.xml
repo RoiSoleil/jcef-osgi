@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='org.eclipse.jcef:tp:eclipse-target-definition:1.0.0-SNAPSHOT' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='1'>
-    <property name='p2.timestamp' value='1749201319464'/>
+    <property name='p2.timestamp' value='1749203153933'/>
   </properties>
   <mappings size='3'>
     <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
@@ -32,13 +32,13 @@
         <property name='download.size' value='19370'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='me.friwi.jcefmaven' version='132.3.1'>
+    <artifact classifier='osgi.bundle' id='me.friwi.jcefmaven' version='135.0.20'>
       <properties size='5'>
         <property name='maven-wrapped-groupId' value='me.friwi'/>
         <property name='maven-wrapped-artifactId' value='jcefmaven'/>
-        <property name='maven-wrapped-version' value='132.3.1'/>
+        <property name='maven-wrapped-version' value='135.0.20'/>
         <property name='maven-wrapped-classifier' value=''/>
-        <property name='download.size' value='32176'/>
+        <property name='download.size' value='32173'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='me.friwi.gluegen-rt' version='2.4.0'>
@@ -50,13 +50,13 @@
         <property name='download.size' value='413918'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='me.friwi.jcef-natives-windows-amd64' version='132.3.1'>
+    <artifact classifier='osgi.bundle' id='me.friwi.jcef-api' version='135.0.20'>
       <properties size='5'>
         <property name='maven-wrapped-groupId' value='me.friwi'/>
-        <property name='maven-wrapped-artifactId' value='jcef-natives-windows-amd64'/>
-        <property name='maven-wrapped-version' value='132.3.1'/>
+        <property name='maven-wrapped-artifactId' value='jcef-api'/>
+        <property name='maven-wrapped-version' value='135.0.20'/>
         <property name='maven-wrapped-classifier' value=''/>
-        <property name='download.size' value='137664826'/>
+        <property name='download.size' value='221149'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.apache.commons.commons-codec' version='1.17.1'>
@@ -81,15 +81,6 @@
         <property name='download.size' value='674238'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='me.friwi.jcef-api' version='132.3.1'>
-      <properties size='5'>
-        <property name='maven-wrapped-groupId' value='me.friwi'/>
-        <property name='maven-wrapped-artifactId' value='jcef-api'/>
-        <property name='maven-wrapped-version' value='132.3.1'/>
-        <property name='maven-wrapped-classifier' value=''/>
-        <property name='download.size' value='221054'/>
-      </properties>
-    </artifact>
     <artifact classifier='osgi.bundle' id='me.friwi.jogl-all' version='2.4.0'>
       <properties size='5'>
         <property name='maven-wrapped-groupId' value='me.friwi'/>
@@ -97,6 +88,15 @@
         <property name='maven-wrapped-version' value='2.4.0'/>
         <property name='maven-wrapped-classifier' value=''/>
         <property name='download.size' value='5326932'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='me.friwi.jcef-natives-windows-amd64' version='135.0.20'>
+      <properties size='5'>
+        <property name='maven-wrapped-groupId' value='me.friwi'/>
+        <property name='maven-wrapped-artifactId' value='jcef-natives-windows-amd64'/>
+        <property name='maven-wrapped-version' value='135.0.20'/>
+        <property name='maven-wrapped-classifier' value=''/>
+        <property name='download.size' value='140639576'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.apache.commons.commons-io' version='2.16.1'>
