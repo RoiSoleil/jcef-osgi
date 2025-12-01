@@ -2,24 +2,54 @@
 <?pde version="3.8"?>
 <target name="tp">
   <locations>
-    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCEF Windows" missingManifest="generate" type="Maven">
+    <location includeDependencyDepth="0" includeDependencyScopes="compile,runtime" label="JCEF Windows" missingManifest="generate" type="Maven">
       <dependencies>
         <dependency>
           <groupId>me.friwi</groupId>
-          <artifactId>jcef-natives-windows-amd64</artifactId>
-          <version>135.0.20</version>
-          <type>jar</type>
-        </dependency>
-        <dependency>
-          <groupId>me.friwi</groupId>
           <artifactId>jcefmaven</artifactId>
-          <version>135.0.20</version>
+          <version>141.0.10</version>
           <type>jar</type>
         </dependency>
       </dependencies>
       <instructions><![CDATA[
 Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
 version:               ${version_cleanup;${mvnVersion}}
+Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
+Bundle-Version:        ${version}
+Import-Package:        *;resolution:=optional
+Export-Package:        *;version="${version}";-noimport:=true
+]]></instructions>
+    </location>
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCEF Windows Natives" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>me.friwi</groupId>
+          <artifactId>jcef-natives-windows-amd64</artifactId>
+          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+      <instructions><![CDATA[
+Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
+version:               141.0.10
+Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
+Bundle-Version:        ${version}
+Import-Package:        *;resolution:=optional
+Export-Package:        *;version="${version}";-noimport:=true
+]]></instructions>
+    </location>
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCEF API" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>me.friwi</groupId>
+          <artifactId>jcef-api</artifactId>
+          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+      <instructions><![CDATA[
+Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
+version:               141.0.10
 Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
 Bundle-Version:        ${version}
 Import-Package:        *;resolution:=optional
@@ -47,4 +77,22 @@ Export-Package:        *;version="${version}";-noimport:=true
     <plugin id="org.apache.commons.lang3"/>
     <plugin id="org.apache.commons.lang3.source"/>
   </includeBundles>
+  <locations>
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCEF Transitive Dependencies" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>com.google.code.gson</groupId>
+          <artifactId>gson</artifactId>
+          <version>2.11.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-compress</artifactId>
+          <version>1.27.1</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+  </locations>
 </target>
