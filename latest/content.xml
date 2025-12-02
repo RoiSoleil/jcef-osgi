@@ -2,750 +2,809 @@
 <?metadataRepository version='1.2.0'?>
 <repository name='org.eclipse.jcef:tp:eclipse-target-definition:1.0.0-SNAPSHOT' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='1'>
-    <property name='p2.timestamp' value='1764661611179'/>
+    <property name='p2.timestamp' value='1764662701795'/>
   </properties>
-  <units size='13'>
-    <unit id='org.apache.commons.lang3' version='3.16.0' singleton='false' generation='2'>
-      <update id='org.apache.commons.lang3' range='[0.0.0,3.16.0)' severity='0'/>
-      <properties size='9'>
-        <property name='org.eclipse.equinox.p2.name' value='Apache Commons Lang'/>
-        <property name='org.eclipse.equinox.p2.description' value='Apache Commons Lang, a package of Java utility classes for the  classes that are in java.lang&apos;s hierarchy, or are considered to be so  standard as to justify existence in java.lang.  The code is tested using the latest revision of the JDK for supported  LTS releases: 8, 11, 17 and 21 currently.  See https://github.com/apache/commons-lang/blob/master/.github/workflows/maven.yml    Please ensure your build environment is up-to-date and kindly report any build issues.'/>
-        <property name='org.eclipse.equinox.p2.provider' value='The Apache Software Foundation'/>
-        <property name='org.eclipse.equinox.p2.doc.url' value='https://commons.apache.org/proper/commons-lang/'/>
-        <property name='maven-groupId' value='org.apache.commons'/>
-        <property name='maven-artifactId' value='commons-lang3'/>
-        <property name='maven-version' value='3.16.0'/>
-        <property name='maven-repository' value='central'/>
-        <property name='maven-type' value='jar'/>
-      </properties>
-      <provides size='22'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.lang3' version='3.16.0'/>
-        <provided namespace='osgi.bundle' name='org.apache.commons.lang3' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.arch' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.builder' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.compare' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.concurrent' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.concurrent.locks' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.event' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.exception' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.function' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.math' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.mutable' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.reflect' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.stream' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.text' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.text.translate' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.time' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.tuple' version='3.16.0'/>
-        <provided namespace='java.package' name='org.apache.commons.lang3.util' version='3.16.0'/>
-        <provided namespace='osgi.identity' name='org.apache.commons.lang3' version='3.16.0'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='2'>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
-          <description>
-            org.apache.commons.lang3
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.lang3.source' range='[3.16.0,3.16.0]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.apache.commons.lang3' version='3.16.0'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.apache.commons.lang3&#xA;Bundle-Version: 3.16.0&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.apache.commons.commons-io' version='2.16.1' singleton='false' generation='2'>
-      <update id='org.apache.commons.commons-io' range='[0.0.0,2.16.1)' severity='0'/>
-      <properties size='9'>
-        <property name='org.eclipse.equinox.p2.name' value='Apache Commons IO'/>
-        <property name='org.eclipse.equinox.p2.description' value='The Apache Commons IO library contains utility classes, stream implementations, file filters,file comparators, endian transformation classes, and much more.'/>
-        <property name='org.eclipse.equinox.p2.provider' value='The Apache Software Foundation'/>
-        <property name='org.eclipse.equinox.p2.doc.url' value='https://commons.apache.org/proper/commons-io/'/>
-        <property name='maven-groupId' value='commons-io'/>
-        <property name='maven-artifactId' value='commons-io'/>
-        <property name='maven-version' value='2.16.1'/>
-        <property name='maven-repository' value='central'/>
-        <property name='maven-type' value='jar'/>
-      </properties>
-      <provides size='24'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.commons-io' version='2.16.1'/>
-        <provided namespace='osgi.bundle' name='org.apache.commons.commons-io' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io' version='1.4.9999'/>
-        <provided namespace='java.package' name='org.apache.commons.io.comparator' version='1.4.9999'/>
-        <provided namespace='java.package' name='org.apache.commons.io.filefilter' version='1.4.9999'/>
-        <provided namespace='java.package' name='org.apache.commons.io.input' version='1.4.9999'/>
-        <provided namespace='java.package' name='org.apache.commons.io.output' version='1.4.9999'/>
-        <provided namespace='java.package' name='org.apache.commons.io.build' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.channels' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.charset' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.file' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.file.attribute' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.file.spi' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.function' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.input.buffer' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.monitor' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.serialization' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.comparator' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.filefilter' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.input' version='2.16.1'/>
-        <provided namespace='java.package' name='org.apache.commons.io.output' version='2.16.1'/>
-        <provided namespace='osgi.identity' name='org.apache.commons.commons-io' version='2.16.1'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='4'>
-        <required namespace='java.package' name='sun.nio.ch' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='sun.misc' range='0.0.0' optional='true' greedy='false'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
-          <description>
-            org.apache.commons.commons-io
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.commons-io.source' range='[2.16.1,2.16.1]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.apache.commons.commons-io' version='2.16.1'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.apache.commons.commons-io&#xA;Bundle-Version: 2.16.1&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='me.friwi.jogl-all' version='2.4.0' singleton='false' generation='2'>
-      <update id='me.friwi.jogl-all' range='[0.0.0,2.4.0)' severity='0'/>
+  <units size='9'>
+    <unit id='me.friwi.gluegen-rt' version='141.0.10' singleton='false' generation='2'>
+      <update id='me.friwi.gluegen-rt' range='[0.0.0,141.0.10)' severity='0'/>
       <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:jogl-all:2.4.0'/>
+        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:gluegen-rt:v2.4.0'/>
         <property name='maven-wrapped-groupId' value='me.friwi'/>
-        <property name='maven-wrapped-artifactId' value='jogl-all'/>
-        <property name='maven-wrapped-version' value='2.4.0'/>
+        <property name='maven-wrapped-artifactId' value='gluegen-rt'/>
+        <property name='maven-wrapped-version' value='v2.4.0'/>
         <property name='maven-wrapped-classifier' value=''/>
       </properties>
-      <provides size='146'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jogl-all' version='2.4.0'/>
-        <provided namespace='osgi.bundle' name='me.friwi.jogl-all' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.gluegen.runtime.opengl' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.os,com.jogamp.gluegen.runtime' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.graph.curve' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.graph.geom,com.jogamp.opengl.math.geom,jogamp.graph.geom.plane' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.graph.curve.opengl' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.graph.curve,com.jogamp.graph.font,com.jogamp.graph.geom,com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.glsl,com.jogamp.opengl.util.texture,jogamp.graph.geom.plane' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.graph.curve.tess' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.graph.geom' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.graph.font' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.graph.curve,com.jogamp.opengl.math.geom,jogamp.graph.geom.plane' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.graph.geom' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl.math,com.jogamp.opengl.math.geom,jogamp.graph.geom.plane' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.type,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.util,jogamp.nativewindow.jawt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow.egl' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow.ios' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow.javafx' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,javafx.stage' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow.macosx' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow.swt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,org.eclipse.swt.graphics,org.eclipse.swt.widgets' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow.util' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.type,com.jogamp.common.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow.windows' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.nativewindow.x11' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,jogamp.nativewindow.x11' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt.event,com.jogamp.newt.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.newt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.awt.applet' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.newt.event' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.event.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt,com.jogamp.newt.event' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.javafx' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt,javafx.scene.canvas' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.opengl' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,com.jogamp.opengl,jogamp.newt,jogamp.opengl' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.opengl.util' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.newt,com.jogamp.newt.event,com.jogamp.newt.opengl' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.opengl.util.stereo' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.newt,com.jogamp.opengl.util.stereo' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.swt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt,org.eclipse.swt,org.eclipse.swt.widgets' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.util' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.newt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.newt.util.applet' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.newt.event,com.jogamp.newt.opengl,com.jogamp.opengl,com.jogamp.opengl.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.opengl.fixedfunc,jogamp.opengl' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.opengl,com.jogamp.opengl.util.awt,javax.swing' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.egl' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.common.os' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.fixedfunc' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.glu' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.glsl' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.glu.gl2' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.glu' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.glu.gl2es1' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.glu' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.math' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.math.geom' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl.math,jogamp.graph.geom.plane' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.swt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.opengl,org.eclipse.swt.widgets' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.nativewindow.util,com.jogamp.opengl,com.jogamp.opengl.fixedfunc,com.jogamp.opengl.math,com.jogamp.opengl.math.geom,com.jogamp.opengl.util.glsl,com.jogamp.opengl.util.texture,jogamp.opengl,jogamp.opengl.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.av' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.net,com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.texture' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.texture' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.gl2' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.glsl' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.net,com.jogamp.opengl' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.glsl.fixedfunc' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.glsl.sdk' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.packrect' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.stereo' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.opengl,com.jogamp.opengl.math,com.jogamp.opengl.math.geom,com.jogamp.opengl.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.stereo.generic' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.opengl.util.stereo,jogamp.opengl.util.stereo' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.texture' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.texture.spi' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.texture.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.texture' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.texture.spi' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util.texture' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.opengl.util.texture.spi.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util.texture,com.jogamp.opengl.util.texture.spi' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.graph.curve.opengl' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.graph.curve.opengl,com.jogamp.opengl,com.jogamp.opengl.util.texture' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.graph.curve.opengl.shader' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.graph.curve.tess' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.graph.curve.tess,com.jogamp.graph.geom,com.jogamp.opengl.math' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.graph.font' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.graph.font' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.graph.font.typecast' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.graph.curve,com.jogamp.graph.font,com.jogamp.graph.geom,com.jogamp.opengl.math.geom,jogamp.graph.font,jogamp.graph.font.typecast.ot' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.graph.font.typecast.ot' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl.math.geom,jogamp.graph.font.typecast.ot.table' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.graph.font.typecast.ot.mac' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.graph.font.typecast.ot.table' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='jogamp.graph.font.typecast.ot' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.graph.font.typecast.t2' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='jogamp.graph.font.typecast.ot,jogamp.graph.font.typecast.ot.table' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.graph.font.typecast.tt.engine' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='jogamp.graph.font.typecast.ot' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.graph.geom.plane' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.graph.geom,com.jogamp.opengl.math.geom' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativetag.opengl.linux.aarch64' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.opengl.linux.amd64' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.opengl.linux.armv6hf' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.opengl.linux.i586' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.opengl.macosx.universal' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.opengl.windows.amd64' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.opengl.windows.i586' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativewindow' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.jvm,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,javax.swing' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.drm' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.nativewindow,jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.ios' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.jawt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.jawt.macosx' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.nativewindow.util,jogamp.nativewindow.jawt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.jawt.windows' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.nativewindow.util,jogamp.nativewindow.jawt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.jawt.x11' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.nativewindow.util,jogamp.nativewindow.jawt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.macosx' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.windows' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.x11' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.nativewindow.x11,jogamp.nativewindow' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativewindow.x11.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.jvm,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,com.jogamp.newt.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.awt,com.jogamp.newt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.awt.event' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt,com.jogamp.newt.event,com.jogamp.newt.event.awt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.newt.event' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.util,jogamp.newt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver.bcm.vc.iv' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,jogamp.newt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver.egl.gbm' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,jogamp.newt' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver.ios' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,jogamp.newt,jogamp.newt.driver' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver.linux' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.newt.event,jogamp.newt.driver' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver.macosx' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,com.jogamp.newt.util,jogamp.newt,jogamp.newt.driver' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver.opengl' version='2.4.0'>
+      <provides size='34'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.gluegen-rt' version='141.0.10'/>
+        <provided namespace='osgi.bundle' name='me.friwi.gluegen-rt' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.common' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver.windows' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.common.jvm' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.common.net' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.common.net.asset' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.common.nio' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,jogamp.newt' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.newt.driver.x11' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.common.os' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,jogamp.newt,jogamp.newt.driver' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util,jogamp.common.os' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.newt.event' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.common.type' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.common.util' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.newt.event' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common,com.jogamp.common.net' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.newt.javafx' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.common.util.awt' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.newt,com.jogamp.newt.util' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.newt.swt' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.common.util.bin' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.common.util.cache' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.newt,com.jogamp.newt.util,org.eclipse.swt.widgets' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.net' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.newt.swt.event' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.common.util.locks' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.gluegen.runtime' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt.event,org.eclipse.swt,org.eclipse.swt.widgets' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.os' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl' version='2.4.0'>
+        <provided namespace='java.package' name='gluegen' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.common' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.os,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.opengl,com.jogamp.opengl.fixedfunc' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.awt' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.common.jvm' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.common.os' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,jogamp.opengl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.os,com.jogamp.common.util' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.egl' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.common.os.elf' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.nativewindow.egl,com.jogamp.opengl,com.jogamp.opengl.egl,jogamp.nativewindow,jogamp.opengl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.os' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.es1' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.common.util' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.opengl,jogamp.opengl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.es3' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.common.util.locks' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.opengl,jogamp.opengl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util.locks' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.gl2' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.nativetag.common.linux.aarch64' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.nativetag.common.linux.amd64' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.nativetag.common.linux.armv6hf' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.nativetag.common.macosx.universal' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.nativetag.common.windows.amd64' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.linux-aarch64' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.linux-amd64' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.linux-armv6hf' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.macosx-universal' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.windows-amd64' version='141.0.10'/>
+        <provided namespace='osgi.identity' name='me.friwi.gluegen-rt' version='141.0.10'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='21'>
+        <required namespace='java.package' name='java.awt' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.io' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.lang' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.lang.ref' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.lang.reflect' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.net' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.nio' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.nio.channels' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.security' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.security.cert' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util.concurrent' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util.concurrent.locks' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util.jar' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util.regex' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util.zip' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='jdk.internal.module' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.jdesktop.applet.util' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='sun.misc' range='0.0.0' optional='true' greedy='false'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
+          <description>
+            me.friwi.gluegen-rt
+          </description>
+        </requiredProperties>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.gluegen-rt.source' range='[141.0.10,141.0.10]' optional='true'>
+          <filter>
+            (org.eclipse.update.install.sources=true)
+          </filter>
+        </required>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='me.friwi.gluegen-rt' version='141.0.10'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: me.friwi.gluegen-rt&#xA;Bundle-Version: 141.0.10&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='generated.target.category.5e1e0b4d-ccd0-499e-ad20-828eb37d63b0' version='1.0.0.AP-7IcDrE'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JCEF Windows Natives'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.5e1e0b4d-ccd0-499e-ad20-828eb37d63b0' version='1.0.0.AP-7IcDrE'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-windows-amd64' range='[141.0.10,141.0.10]'/>
+      </requires>
+    </unit>
+    <unit id='me.friwi.jcef-natives-windows-amd64' version='141.0.10' singleton='false' generation='2'>
+      <update id='me.friwi.jcef-natives-windows-amd64' range='[0.0.0,141.0.10)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:jcef-natives-windows-amd64:jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123'/>
+        <property name='maven-wrapped-groupId' value='me.friwi'/>
+        <property name='maven-wrapped-artifactId' value='jcef-natives-windows-amd64'/>
+        <property name='maven-wrapped-version' value='jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123'/>
+        <property name='maven-wrapped-classifier' value=''/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-windows-amd64' version='141.0.10'/>
+        <provided namespace='osgi.bundle' name='me.friwi.jcef-natives-windows-amd64' version='141.0.10'/>
+        <provided namespace='java.package' name='me.friwi.jcefmaven' version='141.0.10'/>
+        <provided namespace='osgi.identity' name='me.friwi.jcef-natives-windows-amd64' version='141.0.10'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='java.package' name='java.lang' range='0.0.0' optional='true' greedy='false'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
+          <description>
+            me.friwi.jcef-natives-windows-amd64
+          </description>
+        </requiredProperties>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-windows-amd64.source' range='[141.0.10,141.0.10]' optional='true'>
+          <filter>
+            (org.eclipse.update.install.sources=true)
+          </filter>
+        </required>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='me.friwi.jcef-natives-windows-amd64' version='141.0.10'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: me.friwi.jcef-natives-windows-amd64&#xA;Bundle-Version: 141.0.10&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='me.friwi.jogl-all' version='141.0.10' singleton='false' generation='2'>
+      <update id='me.friwi.jogl-all' range='[0.0.0,141.0.10)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:jogl-all:v2.4.0'/>
+        <property name='maven-wrapped-groupId' value='me.friwi'/>
+        <property name='maven-wrapped-artifactId' value='jogl-all'/>
+        <property name='maven-wrapped-version' value='v2.4.0'/>
+        <property name='maven-wrapped-classifier' value=''/>
+      </properties>
+      <provides size='142'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jogl-all' version='141.0.10'/>
+        <provided namespace='osgi.bundle' name='me.friwi.jogl-all' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.gluegen.runtime.opengl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.os,com.jogamp.gluegen.runtime' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.graph.curve' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.graph.geom,com.jogamp.opengl.math.geom,jogamp.graph.geom.plane' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.graph.curve.opengl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.graph.curve,com.jogamp.graph.font,com.jogamp.graph.geom,com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.glsl,com.jogamp.opengl.util.texture,jogamp.graph.geom.plane' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.graph.curve.tess' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.graph.geom' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.graph.font' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.graph.curve,com.jogamp.opengl.math.geom,jogamp.graph.geom.plane' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.graph.geom' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl.math,com.jogamp.opengl.math.geom,jogamp.graph.geom.plane' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.type,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.util,jogamp.nativewindow.jawt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow.egl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow.ios' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow.javafx' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,javafx.stage' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow.macosx' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow.swt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,org.eclipse.swt.graphics,org.eclipse.swt.widgets' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow.util' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.type,com.jogamp.common.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow.windows' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.nativewindow.x11' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,jogamp.nativewindow.x11' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt.event,com.jogamp.newt.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.newt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.awt.applet' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.newt.event' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.event.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt,com.jogamp.newt.event' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.javafx' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt,javafx.scene.canvas' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.opengl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,com.jogamp.opengl,jogamp.newt,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.opengl.util' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.newt,com.jogamp.newt.event,com.jogamp.newt.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.opengl.util.stereo' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.newt,com.jogamp.opengl.util.stereo' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.swt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt,org.eclipse.swt,org.eclipse.swt.widgets' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.util' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.newt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.newt.util.applet' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.newt.event,com.jogamp.newt.opengl,com.jogamp.opengl,com.jogamp.opengl.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.opengl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.opengl.fixedfunc,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.opengl.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.opengl,com.jogamp.opengl.util.awt,javax.swing' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.opengl.egl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.common.os' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.opengl.fixedfunc' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='com.jogamp.opengl' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.gl4' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.glu' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.opengl,jogamp.opengl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.glsl' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.glu' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.glu.gl2' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.glu,com.jogamp.opengl.util,com.jogamp.opengl.util.glsl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.glu' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.glu.error' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.opengl.glu.gl2.nurbs' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.glu.gl2es1' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl.glu,jogamp.opengl.glu.nurbs' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.glu' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.glu.mipmap' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.math' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='com.jogamp.opengl' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.glu.nurbs' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.opengl.glu.registry' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.opengl.glu.tessellator' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.math.geom' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl.glu' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl.math,jogamp.graph.geom.plane' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.ios.eagl' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.swt' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.opengl,jogamp.opengl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.opengl,org.eclipse.swt.widgets' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.macosx.cgl' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.opengl,jogamp.opengl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.nativewindow.util,com.jogamp.opengl,com.jogamp.opengl.fixedfunc,com.jogamp.opengl.math,com.jogamp.opengl.math.geom,com.jogamp.opengl.util.glsl,com.jogamp.opengl.util.texture,jogamp.opengl,jogamp.opengl.util' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.macosx.cgl.awt' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.av' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,jogamp.opengl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.common.net,com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.texture' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.openal.av' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.awt' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl.util.av' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.texture' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.shader' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.opengl.util' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.gl2' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.glsl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.net,com.jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.glsl.fixedfunc' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.util.av' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.glsl.sdk' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.packrect' version='141.0.10'/>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.stereo' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.net,com.jogamp.opengl,com.jogamp.opengl.util.av,com.jogamp.opengl.util.texture' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.opengl,com.jogamp.opengl.math,com.jogamp.opengl.math.geom,com.jogamp.opengl.util' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.util.av.impl' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.stereo.generic' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util.texture,jogamp.opengl.util.av' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.opengl.util.stereo,jogamp.opengl.util.stereo' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.util.glsl' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.texture' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,jogamp.opengl.util' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.texture.spi' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.util.glsl.fixedfunc' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.texture.awt' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.fixedfunc,com.jogamp.opengl.util,com.jogamp.opengl.util.glsl,com.jogamp.opengl.util.glsl.fixedfunc' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,com.jogamp.opengl.util.texture' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.util.glsl.fixedfunc.shaders' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.opengl.util.glsl.fixedfunc.shaders.bin.nvidia' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.opengl.util.jpeg' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.texture.spi' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.opengl.util.texture' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util.texture' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.util.pngj' version='2.4.0'>
+        <provided namespace='java.package' name='com.jogamp.opengl.util.texture.spi.awt' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='jogamp.opengl.util.pngj.chunks' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util.texture,com.jogamp.opengl.util.texture.spi' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.util.pngj.chunks' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.graph.curve.opengl' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='jogamp.opengl.util.pngj' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.graph.curve.opengl,com.jogamp.opengl,com.jogamp.opengl.util.texture' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.util.stereo' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.graph.curve.opengl.shader' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.graph.curve.tess' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.opengl,com.jogamp.opengl.math,com.jogamp.opengl.util.stereo,com.jogamp.opengl.util.stereo.generic' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.graph.curve.tess,com.jogamp.graph.geom,com.jogamp.opengl.math' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.util.stereo.shader' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.opengl.windows.wgl' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.graph.font' version='141.0.10'>
           <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.opengl,jogamp.nativewindow.windows,jogamp.opengl' type='List'/>
+            <property name='java.package.directive.uses' value='com.jogamp.graph.font' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.windows.wgl.awt' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.graph.font.typecast' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.graph.curve,com.jogamp.graph.font,com.jogamp.graph.geom,com.jogamp.opengl.math.geom,jogamp.graph.font,jogamp.graph.font.typecast.ot' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.graph.font.typecast.ot' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl.math.geom,jogamp.graph.font.typecast.ot.table' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.graph.font.typecast.ot.mac' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.graph.font.typecast.ot.table' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='jogamp.graph.font.typecast.ot' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.graph.font.typecast.t2' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='jogamp.graph.font.typecast.ot,jogamp.graph.font.typecast.ot.table' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.graph.font.typecast.tt.engine' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='jogamp.graph.font.typecast.ot' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.graph.geom.plane' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.graph.geom,com.jogamp.opengl.math.geom' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativetag.opengl.linux.aarch64' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.nativetag.opengl.linux.amd64' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.nativetag.opengl.linux.armv6hf' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.nativetag.opengl.macosx.universal' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.nativetag.opengl.windows.amd64' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.nativewindow' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.jvm,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,javax.swing' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.drm' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.nativewindow,jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.ios' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.jawt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.jawt.macosx' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.nativewindow.util,jogamp.nativewindow.jawt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.jawt.windows' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.nativewindow.util,jogamp.nativewindow.jawt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.jawt.x11' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.nativewindow.util,jogamp.nativewindow.jawt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.macosx' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.windows' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.x11' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.nativewindow.x11,jogamp.nativewindow' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.nativewindow.x11.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.jvm,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,com.jogamp.newt.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.awt,com.jogamp.newt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.awt.event' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt,com.jogamp.newt.event,com.jogamp.newt.event.awt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.newt.event' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.awt,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.util,jogamp.newt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver.bcm.vc.iv' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,jogamp.newt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver.egl.gbm' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,jogamp.newt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver.ios' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,jogamp.newt,jogamp.newt.driver' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver.linux' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.newt.event,jogamp.newt.driver' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver.macosx' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,com.jogamp.newt.util,jogamp.newt,jogamp.newt.driver' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver.opengl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver.windows' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,jogamp.newt' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.driver.x11' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.util,com.jogamp.nativewindow,com.jogamp.nativewindow.util,com.jogamp.newt,com.jogamp.newt.event,jogamp.newt,jogamp.newt.driver' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.event' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.newt.event' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.javafx' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.newt,com.jogamp.newt.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.swt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.newt,com.jogamp.newt.util,org.eclipse.swt.widgets' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.newt.swt.event' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,com.jogamp.newt.event,org.eclipse.swt,org.eclipse.swt.widgets' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.os,com.jogamp.common.util,com.jogamp.common.util.locks,com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.opengl,com.jogamp.opengl.fixedfunc' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.egl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.nativewindow.egl,com.jogamp.opengl,com.jogamp.opengl.egl,jogamp.nativewindow,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.es1' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.opengl,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.es3' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.opengl,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.gl2' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.gl4' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.opengl,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.glu' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.glu,com.jogamp.opengl.util,com.jogamp.opengl.util.glsl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.glu.error' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.opengl.glu.gl2.nurbs' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl.glu,jogamp.opengl.glu.nurbs' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.glu.mipmap' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.glu.nurbs' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.opengl.glu.registry' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.opengl.glu.tessellator' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl.glu' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.ios.eagl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.opengl,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.macosx.cgl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.opengl,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.macosx.cgl.awt' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='com.jogamp.nativewindow,jogamp.opengl' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogamp.opengl.x11.glx' version='2.4.0'>
+        <provided namespace='java.package' name='jogamp.opengl.openal.av' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl.util.av' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.shader' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.opengl.util' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.util.av' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.net,com.jogamp.opengl,com.jogamp.opengl.util.av,com.jogamp.opengl.util.texture' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.util.av.impl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util.texture,jogamp.opengl.util.av' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.util.glsl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.util,jogamp.opengl.util' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.util.glsl.fixedfunc' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl,com.jogamp.opengl.fixedfunc,com.jogamp.opengl.util,com.jogamp.opengl.util.glsl,com.jogamp.opengl.util.glsl.fixedfunc' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.util.glsl.fixedfunc.shaders' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.opengl.util.glsl.fixedfunc.shaders.bin.nvidia' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.opengl.util.jpeg' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.opengl.util.texture' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.util.pngj' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='jogamp.opengl.util.pngj.chunks' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.util.pngj.chunks' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='jogamp.opengl.util.pngj' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.util.stereo' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow.util,com.jogamp.opengl,com.jogamp.opengl.math,com.jogamp.opengl.util.stereo,com.jogamp.opengl.util.stereo.generic' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.util.stereo.shader' version='141.0.10'/>
+        <provided namespace='java.package' name='jogamp.opengl.windows.wgl' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.opengl,jogamp.nativewindow.windows,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.windows.wgl.awt' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='com.jogamp.nativewindow,jogamp.opengl' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='jogamp.opengl.x11.glx' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='com.jogamp.common.nio,com.jogamp.common.util,com.jogamp.gluegen.runtime,com.jogamp.nativewindow,com.jogamp.nativewindow.x11,com.jogamp.opengl,jogamp.nativewindow.x11,jogamp.opengl' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='jogl.util.data.av' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.linux-aarch64' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.linux-amd64' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.linux-armv6hf' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.linux-i586' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.macosx-universal' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.windows-amd64' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.windows-i586' version='2.4.0'/>
-        <provided namespace='java.package' name='newt.data' version='2.4.0'/>
-        <provided namespace='osgi.identity' name='me.friwi.jogl-all' version='2.4.0'>
+        <provided namespace='java.package' name='jogl.util.data.av' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.linux-aarch64' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.linux-amd64' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.linux-armv6hf' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.macosx-universal' version='141.0.10'/>
+        <provided namespace='java.package' name='natives.windows-amd64' version='141.0.10'/>
+        <provided namespace='java.package' name='newt.data' version='141.0.10'/>
+        <provided namespace='osgi.identity' name='me.friwi.jogl-all' version='141.0.10'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
@@ -816,434 +875,82 @@
             me.friwi.jogl-all
           </description>
         </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jogl-all.source' range='[2.4.0,2.4.0]' optional='true'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jogl-all.source' range='[141.0.10,141.0.10]' optional='true'>
           <filter>
             (org.eclipse.update.install.sources=true)
           </filter>
         </required>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='me.friwi.jogl-all' version='2.4.0'/>
+        <artifact classifier='osgi.bundle' id='me.friwi.jogl-all' version='141.0.10'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: me.friwi.jogl-all&#xA;Bundle-Version: 2.4.0&#xA;
+            Bundle-SymbolicName: me.friwi.jogl-all&#xA;Bundle-Version: 141.0.10&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='com.google.errorprone.annotations' version='2.27.0' singleton='false' generation='2'>
-      <update id='com.google.errorprone.annotations' range='[0.0.0,2.27.0)' severity='0'/>
-      <properties size='9'>
-        <property name='org.eclipse.equinox.p2.name' value='error-prone annotations'/>
-        <property name='org.eclipse.equinox.p2.description' value='Error Prone is a static analysis tool for Java that catches common programming mistakes at compile-time.'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Google LLC'/>
-        <property name='org.eclipse.equinox.p2.doc.url' value='https://errorprone.info/error_prone_annotations'/>
-        <property name='maven-groupId' value='com.google.errorprone'/>
-        <property name='maven-artifactId' value='error_prone_annotations'/>
-        <property name='maven-version' value='2.27.0'/>
-        <property name='maven-repository' value='central'/>
-        <property name='maven-type' value='jar'/>
+    <unit id='generated.target.category.067ad409-2100-4967-b3fe-6bd0e6b1bdbb' version='1.0.0.EBD-7wcDQD'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JCEF API'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
       </properties>
-      <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.google.errorprone.annotations' version='2.27.0'/>
-        <provided namespace='osgi.bundle' name='com.google.errorprone.annotations' version='2.27.0'/>
-        <provided namespace='java.package' name='com.google.errorprone.annotations' version='2.27.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='javax.lang.model.element' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.google.errorprone.annotations.concurrent' version='2.27.0'/>
-        <provided namespace='osgi.identity' name='com.google.errorprone.annotations' version='2.27.0'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.067ad409-2100-4967-b3fe-6bd0e6b1bdbb' version='1.0.0.EBD-7wcDQD'/>
       </provides>
       <requires size='3'>
-        <required namespace='java.package' name='javax.lang.model.element' range='0.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
-          <description>
-            com.google.errorprone.annotations
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.errorprone.annotations.source' range='[2.27.0,2.27.0]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.gluegen-rt' range='[141.0.10,141.0.10]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jogl-all' range='[141.0.10,141.0.10]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-api' range='[141.0.10,141.0.10]'/>
       </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='com.google.errorprone.annotations' version='2.27.0'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: com.google.errorprone.annotations&#xA;Bundle-Version: 2.27.0&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
     </unit>
-    <unit id='me.friwi.gluegen-rt' version='2.4.0' singleton='false' generation='2'>
-      <update id='me.friwi.gluegen-rt' range='[0.0.0,2.4.0)' severity='0'/>
+    <unit id='me.friwi.jcef-api' version='141.0.10' singleton='false' generation='2'>
+      <update id='me.friwi.jcef-api' range='[0.0.0,141.0.10)' severity='0'/>
       <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:gluegen-rt:2.4.0'/>
-        <property name='maven-wrapped-groupId' value='me.friwi'/>
-        <property name='maven-wrapped-artifactId' value='gluegen-rt'/>
-        <property name='maven-wrapped-version' value='2.4.0'/>
-        <property name='maven-wrapped-classifier' value=''/>
-      </properties>
-      <provides size='38'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.gluegen-rt' version='2.4.0'/>
-        <provided namespace='osgi.bundle' name='me.friwi.gluegen-rt' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.common' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.common.jvm' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.common.net' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.common.net.asset' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.common.nio' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.common.os' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util,jogamp.common.os' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.common.type' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.common.util' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common,com.jogamp.common.net' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.common.util.awt' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.common.util.bin' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.common.util.cache' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.net' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.jogamp.common.util.locks' version='2.4.0'/>
-        <provided namespace='java.package' name='com.jogamp.gluegen.runtime' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.os' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='gluegen' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.common' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.common.jvm' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.common.os' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.os,com.jogamp.common.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.common.os.elf' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.os' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.common.util' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.common.util.locks' version='2.4.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.jogamp.common.util.locks' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='jogamp.nativetag.common.linux.aarch64' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.common.linux.amd64' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.common.linux.armv6hf' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.common.linux.i586' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.common.macosx.universal' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.common.windows.amd64' version='2.4.0'/>
-        <provided namespace='java.package' name='jogamp.nativetag.common.windows.i586' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.linux-aarch64' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.linux-amd64' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.linux-armv6hf' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.linux-i586' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.macosx-universal' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.windows-amd64' version='2.4.0'/>
-        <provided namespace='java.package' name='natives.windows-i586' version='2.4.0'/>
-        <provided namespace='osgi.identity' name='me.friwi.gluegen-rt' version='2.4.0'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='21'>
-        <required namespace='java.package' name='java.awt' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.io' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.lang' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.lang.ref' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.lang.reflect' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.net' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.nio' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.nio.channels' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.security' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.security.cert' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util.concurrent' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util.concurrent.locks' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util.jar' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util.regex' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util.zip' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='jdk.internal.module' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.jdesktop.applet.util' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='sun.misc' range='0.0.0' optional='true' greedy='false'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
-          <description>
-            me.friwi.gluegen-rt
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.gluegen-rt.source' range='[2.4.0,2.4.0]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='me.friwi.gluegen-rt' version='2.4.0'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: me.friwi.gluegen-rt&#xA;Bundle-Version: 2.4.0&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.apache.commons.commons-codec' version='1.17.1' singleton='false' generation='2'>
-      <update id='org.apache.commons.commons-codec' range='[0.0.0,1.17.1)' severity='0'/>
-      <properties size='9'>
-        <property name='org.eclipse.equinox.p2.name' value='Apache Commons Codec'/>
-        <property name='org.eclipse.equinox.p2.description' value='The Apache Commons Codec component contains encoders and decoders for     various formats such as Base16, Base32, Base64, digest, and Hexadecimal. In addition to these     widely used encoders and decoders, the codec package also maintains a     collection of phonetic encoding utilities.'/>
-        <property name='org.eclipse.equinox.p2.provider' value='The Apache Software Foundation'/>
-        <property name='org.eclipse.equinox.p2.doc.url' value='https://commons.apache.org/proper/commons-codec/'/>
-        <property name='maven-groupId' value='commons-codec'/>
-        <property name='maven-artifactId' value='commons-codec'/>
-        <property name='maven-version' value='1.17.1'/>
-        <property name='maven-repository' value='central'/>
-        <property name='maven-type' value='jar'/>
-      </properties>
-      <provides size='11'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.commons-codec' version='1.17.1'/>
-        <provided namespace='osgi.bundle' name='org.apache.commons.commons-codec' version='1.17.1'/>
-        <provided namespace='java.package' name='org.apache.commons.codec' version='1.17.1'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.binary' version='1.17.1'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.cli' version='1.17.1'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.digest' version='1.17.1'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.language' version='1.17.1'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.language.bm' version='1.17.1'/>
-        <provided namespace='java.package' name='org.apache.commons.codec.net' version='1.17.1'/>
-        <provided namespace='osgi.identity' name='org.apache.commons.commons-codec' version='1.17.1'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='4'>
-        <required namespace='java.package' name='javax.crypto' range='0.0.0'/>
-        <required namespace='java.package' name='javax.crypto.spec' range='0.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
-          <description>
-            org.apache.commons.commons-codec
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.commons-codec.source' range='[1.17.1,1.17.1]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.apache.commons.commons-codec' version='1.17.1'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.apache.commons.commons-codec&#xA;Bundle-Version: 1.17.1&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='me.friwi.jcef-natives-windows-amd64' version='135.0.20' singleton='false' generation='2'>
-      <update id='me.friwi.jcef-natives-windows-amd64' range='[0.0.0,135.0.20)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:jcef-natives-windows-amd64:135.0.20'/>
-        <property name='maven-wrapped-groupId' value='me.friwi'/>
-        <property name='maven-wrapped-artifactId' value='jcef-natives-windows-amd64'/>
-        <property name='maven-wrapped-version' value='135.0.20'/>
-        <property name='maven-wrapped-classifier' value=''/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-windows-amd64' version='135.0.20'/>
-        <provided namespace='osgi.bundle' name='me.friwi.jcef-natives-windows-amd64' version='135.0.20'/>
-        <provided namespace='java.package' name='me.friwi.jcefmaven' version='135.0.20'/>
-        <provided namespace='osgi.identity' name='me.friwi.jcef-natives-windows-amd64' version='135.0.20'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='3'>
-        <required namespace='java.package' name='java.lang' range='0.0.0' optional='true' greedy='false'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
-          <description>
-            me.friwi.jcef-natives-windows-amd64
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-windows-amd64.source' range='[135.0.20,135.0.20]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='me.friwi.jcef-natives-windows-amd64' version='135.0.20'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: me.friwi.jcef-natives-windows-amd64&#xA;Bundle-Version: 135.0.20&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='com.google.gson' version='2.11.0' singleton='false' generation='2'>
-      <update id='com.google.gson' range='[0.0.0,2.11.0)' severity='0'/>
-      <properties size='10'>
-        <property name='org.eclipse.equinox.p2.name' value='Gson'/>
-        <property name='org.eclipse.equinox.p2.description' value='Gson JSON library'/>
-        <property name='org.eclipse.equinox.p2.provider' value='Google Gson Project'/>
-        <property name='org.eclipse.equinox.p2.contact' value='https://github.com/google/gson'/>
-        <property name='org.eclipse.equinox.p2.doc.url' value='https://github.com/google/gson'/>
-        <property name='maven-groupId' value='com.google.code.gson'/>
-        <property name='maven-artifactId' value='gson'/>
-        <property name='maven-version' value='2.11.0'/>
-        <property name='maven-repository' value='central'/>
-        <property name='maven-type' value='jar'/>
-      </properties>
-      <provides size='8'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='com.google.gson' version='2.11.0'/>
-        <provided namespace='osgi.bundle' name='com.google.gson' version='2.11.0'/>
-        <provided namespace='java.package' name='com.google.gson' version='2.11.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.google.gson.reflect,com.google.gson.stream' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='com.google.gson.annotations' version='2.11.0'/>
-        <provided namespace='java.package' name='com.google.gson.reflect' version='2.11.0'/>
-        <provided namespace='java.package' name='com.google.gson.stream' version='2.11.0'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='com.google.gson' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='osgi.identity' name='com.google.gson' version='2.11.0'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='5'>
-        <required namespace='java.package' name='sun.misc' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='com.google.gson.annotations' range='0.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.7))'>
-          <description>
-            com.google.gson
-          </description>
-        </requiredProperties>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(|(version=1.7)(version=1.8)))'>
-          <description>
-            com.google.gson
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.gson.source' range='[2.11.0,2.11.0]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='com.google.gson' version='2.11.0'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: com.google.gson&#xA;Bundle-Version: 2.11.0&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='me.friwi.jcef-api' version='135.0.20' singleton='false' generation='2'>
-      <update id='me.friwi.jcef-api' range='[0.0.0,135.0.20)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:jcef-api:135.0.20'/>
+        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:jcef-api:jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123'/>
         <property name='maven-wrapped-groupId' value='me.friwi'/>
         <property name='maven-wrapped-artifactId' value='jcef-api'/>
-        <property name='maven-wrapped-version' value='135.0.20'/>
+        <property name='maven-wrapped-version' value='jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123'/>
         <property name='maven-wrapped-classifier' value=''/>
       </properties>
       <provides size='11'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-api' version='135.0.20'/>
-        <provided namespace='osgi.bundle' name='me.friwi.jcef-api' version='135.0.20'/>
-        <provided namespace='java.package' name='org.cef' version='135.0.20'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-api' version='141.0.10'/>
+        <provided namespace='osgi.bundle' name='me.friwi.jcef-api' version='141.0.10'/>
+        <provided namespace='java.package' name='org.cef' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='org.cef.browser,org.cef.callback,org.cef.handler,org.cef.misc,org.cef.network' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='org.cef.browser' version='135.0.20'>
+        <provided namespace='java.package' name='org.cef.browser' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='org.cef,org.cef.callback,org.cef.handler,org.cef.misc,org.cef.network' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='org.cef.browser.mac' version='135.0.20'>
+        <provided namespace='java.package' name='org.cef.browser.mac' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='org.cef.browser' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='org.cef.callback' version='135.0.20'>
+        <provided namespace='java.package' name='org.cef.callback' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='org.cef.browser,org.cef.handler,org.cef.misc,org.cef.network' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='org.cef.handler' version='135.0.20'>
+        <provided namespace='java.package' name='org.cef.handler' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='org.cef,org.cef.browser,org.cef.callback,org.cef.misc,org.cef.network' type='List'/>
           </properties>
         </provided>
-        <provided namespace='java.package' name='org.cef.misc' version='135.0.20'/>
-        <provided namespace='java.package' name='org.cef.network' version='135.0.20'>
+        <provided namespace='java.package' name='org.cef.misc' version='141.0.10'/>
+        <provided namespace='java.package' name='org.cef.network' version='141.0.10'>
           <properties size='1'>
             <property name='java.package.directive.uses' value='org.cef.callback,org.cef.handler' type='List'/>
           </properties>
         </provided>
-        <provided namespace='osgi.identity' name='me.friwi.jcef-api' version='135.0.20'>
+        <provided namespace='osgi.identity' name='me.friwi.jcef-api' version='141.0.10'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
@@ -1251,10 +958,10 @@
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
       <requires size='27'>
-        <required namespace='java.package' name='com.jogamp.nativewindow' range='[2.4.0,3.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='com.jogamp.opengl' range='[2.4.0,3.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='com.jogamp.opengl.awt' range='[2.4.0,3.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='com.jogamp.opengl.util' range='[2.4.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.jogamp.nativewindow' range='[141.0.0,142.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.jogamp.opengl' range='[141.0.0,142.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.jogamp.opengl.awt' range='[141.0.0,142.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='com.jogamp.opengl.util' range='[141.0.0,142.0.0)' optional='true' greedy='false'/>
         <required namespace='java.package' name='java.awt' range='0.0.0' optional='true' greedy='false'/>
         <required namespace='java.package' name='java.awt.datatransfer' range='0.0.0' optional='true' greedy='false'/>
         <required namespace='java.package' name='java.awt.dnd' range='0.0.0' optional='true' greedy='false'/>
@@ -1281,230 +988,34 @@
             me.friwi.jcef-api
           </description>
         </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-api.source' range='[135.0.20,135.0.20]' optional='true'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-api.source' range='[141.0.10,141.0.10]' optional='true'>
           <filter>
             (org.eclipse.update.install.sources=true)
           </filter>
         </required>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='me.friwi.jcef-api' version='135.0.20'/>
+        <artifact classifier='osgi.bundle' id='me.friwi.jcef-api' version='141.0.10'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: me.friwi.jcef-api&#xA;Bundle-Version: 135.0.20&#xA;
+            Bundle-SymbolicName: me.friwi.jcef-api&#xA;Bundle-Version: 141.0.10&#xA;
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='me.friwi.jcefmaven' version='135.0.20' singleton='false' generation='2'>
-      <update id='me.friwi.jcefmaven' range='[0.0.0,135.0.20)' severity='0'/>
-      <properties size='5'>
-        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:jcefmaven:135.0.20'/>
-        <property name='maven-wrapped-groupId' value='me.friwi'/>
-        <property name='maven-wrapped-artifactId' value='jcefmaven'/>
-        <property name='maven-wrapped-version' value='135.0.20'/>
-        <property name='maven-wrapped-classifier' value=''/>
-      </properties>
-      <provides size='13'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcefmaven' version='135.0.20'/>
-        <provided namespace='osgi.bundle' name='me.friwi.jcefmaven' version='135.0.20'/>
-        <provided namespace='java.package' name='me.friwi.jcefmaven' version='135.0.20'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='org.cef,org.cef.callback,org.cef.handler' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.platform' version='135.0.20'/>
-        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.progress' version='135.0.20'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='me.friwi.jcefmaven' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.step.check' version='135.0.20'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='me.friwi.jcefmaven' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.step.extract' version='135.0.20'/>
-        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.step.fetch' version='135.0.20'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='me.friwi.jcefmaven' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.step.init' version='135.0.20'>
-          <properties size='1'>
-            <property name='java.package.directive.uses' value='me.friwi.jcefmaven,org.cef' type='List'/>
-          </properties>
-        </provided>
-        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.util' version='135.0.20'/>
-        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.util.macos' version='135.0.20'/>
-        <provided namespace='osgi.identity' name='me.friwi.jcefmaven' version='135.0.20'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='17'>
-        <required namespace='java.package' name='com.google.gson' range='[2.11.0,3.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.io' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.lang' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.lang.invoke' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.net' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.nio.file' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util.function' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util.logging' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='java.util.zip' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.compress.archivers.tar' range='[1.27.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.compress.compressors.gzip' range='[1.27.0,2.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.cef' range='[135.0.0,136.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.cef.callback' range='[135.0.0,136.0.0)' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.cef.handler' range='[135.0.0,136.0.0)' optional='true' greedy='false'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
-          <description>
-            me.friwi.jcefmaven
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcefmaven.source' range='[135.0.20,135.0.20]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='me.friwi.jcefmaven' version='135.0.20'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: me.friwi.jcefmaven&#xA;Bundle-Version: 135.0.20&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='org.apache.commons.commons-compress' version='1.27.1' singleton='false' generation='2'>
-      <update id='org.apache.commons.commons-compress' range='[0.0.0,1.27.1)' severity='0'/>
-      <properties size='9'>
-        <property name='org.eclipse.equinox.p2.name' value='Apache Commons Compress'/>
-        <property name='org.eclipse.equinox.p2.description' value='Apache Commons Compress defines an API for working withcompression and archive formats. These include bzip2, gzip, pack200,LZMA, XZ, Snappy, traditional Unix Compress, DEFLATE, DEFLATE64, LZ4,Brotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.'/>
-        <property name='org.eclipse.equinox.p2.provider' value='The Apache Software Foundation'/>
-        <property name='org.eclipse.equinox.p2.doc.url' value='https://commons.apache.org/proper/commons-compress/'/>
-        <property name='maven-groupId' value='org.apache.commons'/>
-        <property name='maven-artifactId' value='commons-compress'/>
-        <property name='maven-version' value='1.27.1'/>
-        <property name='maven-repository' value='central'/>
-        <property name='maven-type' value='jar'/>
-      </properties>
-      <provides size='40'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.commons-compress' version='1.27.1'/>
-        <provided namespace='osgi.bundle' name='org.apache.commons.commons-compress' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers.ar' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers.arj' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers.cpio' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers.dump' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers.examples' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers.jar' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers.sevenz' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers.tar' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.archivers.zip' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.changes' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.brotli' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.bzip2' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.deflate' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.deflate64' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.gzip' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.lz4' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.lz77support' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.lzma' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.lzw' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.pack200' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.snappy' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.xz' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.z' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.compressors.zstandard' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.harmony' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.harmony.archive.internal.nls' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.harmony.pack200' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.harmony.unpack200' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.harmony.unpack200.bytecode' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.harmony.unpack200.bytecode.forms' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.java.util.jar' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.parallel' version='1.27.1'/>
-        <provided namespace='java.package' name='org.apache.commons.compress.utils' version='1.27.1'/>
-        <provided namespace='osgi.identity' name='org.apache.commons.commons-compress' version='1.27.1'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='18'>
-        <required namespace='java.package' name='org.tukaani.xz' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.brotli.dec' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='com.github.luben.zstd' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.objectweb.asm' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.crypto' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='javax.crypto.spec' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.io' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.io.build' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.io.file.attribute' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.io.function' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.io.input' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.io.output' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.lang3' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.lang3.reflect' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.codec.digest' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.apache.commons.codec' range='0.0.0' optional='true' greedy='false'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
-          <description>
-            org.apache.commons.commons-compress
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.commons-compress.source' range='[1.27.1,1.27.1]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.apache.commons.commons-compress' version='1.27.1'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: org.apache.commons.commons-compress&#xA;Bundle-Version: 1.27.1&#xA;
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='generated.target.category.a33ee4d7-087a-42fb-9714-dbf6cc71cea7' version='1.0.0.EB8_o8ycDSz'>
+    <unit id='generated.target.category.dcfbfe1a-7a67-41cf-94dd-9c51a24c9c77' version='1.0.0.AP-7IcDSz'>
       <properties size='2'>
         <property name='org.eclipse.equinox.p2.name' value='JCEF Windows'/>
         <property name='org.eclipse.equinox.p2.type.category' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.a33ee4d7-087a-42fb-9714-dbf6cc71cea7' version='1.0.0.EB8_o8ycDSz'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.dcfbfe1a-7a67-41cf-94dd-9c51a24c9c77' version='1.0.0.AP-7IcDSz'/>
       </provides>
-      <requires size='11'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.commons-compress' range='[1.27.1,1.27.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.lang3' range='[3.16.0,3.16.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.commons-io' range='[2.16.1,2.16.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.errorprone.annotations' range='[2.27.0,2.27.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.gluegen-rt' range='[2.4.0,2.4.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jogl-all' range='[2.4.0,2.4.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.commons.commons-codec' range='[1.17.1,1.17.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-windows-amd64' range='[135.0.20,135.0.20]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='com.google.gson' range='[2.11.0,2.11.0]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-api' range='[135.0.20,135.0.20]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcefmaven' range='[135.0.20,135.0.20]'/>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcefmaven' range='[141.0.10,141.0.10]'/>
       </requires>
     </unit>
     <unit id='a.jre.javase' version='21.0.0' singleton='false'>
@@ -1518,9 +1029,9 @@
         <provided namespace='java.package' name='java.awt.desktop' version='0.0.0'/>
         <provided namespace='java.package' name='javax.imageio.plugins.jpeg' version='0.0.0'/>
         <provided namespace='java.package' name='javax.lang.model.type' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.xml.transform.dom' version='0.0.0'/>
         <provided namespace='java.package' name='java.security.cert' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.zip' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.transform.dom' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio.file' version='0.0.0'/>
         <provided namespace='java.package' name='org.w3c.dom.views' version='0.0.0'/>
         <provided namespace='java.package' name='java.time' version='0.0.0'/>
@@ -1536,17 +1047,17 @@
         <provided namespace='java.package' name='com.sun.net.httpserver' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.jdi.connect' version='0.0.0'/>
         <provided namespace='java.package' name='org.w3c.dom.events' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.swing.text.html' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.swing.plaf' version='0.0.0'/>
         <provided namespace='java.package' name='java.lang.foreign' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.plaf' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.text.html' version='0.0.0'/>
         <provided namespace='java.package' name='java.awt.datatransfer' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.jdi.event' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.dynalink' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.plaf.metal' version='0.0.0'/>
         <provided namespace='java.package' name='java.net.spi' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.xml' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.colorchooser' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.logging' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.dynalink.support' version='0.0.0'/>
         <provided namespace='java.package' name='javax.security.auth.x500' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.stream' version='0.0.0'/>
@@ -1565,11 +1076,11 @@
         <provided namespace='java.package' name='javax.transaction.xa' version='0.0.0'/>
         <provided namespace='java.package' name='javax.xml.transform.stax' version='0.0.0'/>
         <provided namespace='java.package' name='org.w3c.dom.traversal' version='0.0.0'/>
-        <provided namespace='java.package' name='jdk.swing.interop' version='0.0.0'/>
         <provided namespace='java.package' name='java.awt' version='0.0.0'/>
+        <provided namespace='java.package' name='jdk.swing.interop' version='0.0.0'/>
         <provided namespace='java.package' name='java.text' version='0.0.0'/>
-        <provided namespace='java.package' name='com.sun.management' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.undo' version='0.0.0'/>
+        <provided namespace='java.package' name='com.sun.management' version='0.0.0'/>
         <provided namespace='java.package' name='javax.xml.transform.stream' version='0.0.0'/>
         <provided namespace='java.package' name='javax.xml.datatype' version='0.0.0'/>
         <provided namespace='java.package' name='javax.print' version='0.0.0'/>
@@ -1592,15 +1103,15 @@
         <provided namespace='java.package' name='javax.security.auth.spi' version='0.0.0'/>
         <provided namespace='java.package' name='javax.sound.sampled' version='0.0.0'/>
         <provided namespace='java.package' name='java.rmi.server' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.xml.parsers' version='0.0.0'/>
         <provided namespace='java.package' name='javax.sql.rowset.serial' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.parsers' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.plaf.synth' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.plaf.basic' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.tree' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.net' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.function' version='0.0.0'/>
-        <provided namespace='java.package' name='java.awt.image.renderable' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.net' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.dynalink.linker' version='0.0.0'/>
+        <provided namespace='java.package' name='java.awt.image.renderable' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.nio.file' version='0.0.0'/>
         <provided namespace='java.package' name='org.w3c.dom.ls' version='0.0.0'/>
         <provided namespace='java.package' name='javax.smartcardio' version='0.0.0'/>
@@ -1624,24 +1135,24 @@
         <provided namespace='java.package' name='javax.management.openmbean' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.text.rtf' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.javadoc.doclet' version='0.0.0'/>
-        <provided namespace='java.package' name='java.awt.print' version='0.0.0'/>
         <provided namespace='java.package' name='javax.xml.crypto' version='0.0.0'/>
+        <provided namespace='java.package' name='java.awt.print' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.plaf.multi' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.imageio.event' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio.channels.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.imageio.event' version='0.0.0'/>
         <provided namespace='java.package' name='javax.net.ssl' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.xml.stream.events' version='0.0.0'/>
         <provided namespace='java.package' name='java.rmi.registry' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.stream.events' version='0.0.0'/>
         <provided namespace='java.package' name='javax.print.attribute' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.java.accessibility.util' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.swing' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio.file.attribute' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.management.jfr' version='0.0.0'/>
         <provided namespace='java.package' name='java.lang.constant' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.jdi.request' version='0.0.0'/>
-        <provided namespace='java.package' name='java.lang.ref' version='0.0.0'/>
         <provided namespace='java.package' name='java.lang.instrument' version='0.0.0'/>
+        <provided namespace='java.package' name='java.lang.ref' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.regex' version='0.0.0'/>
         <provided namespace='java.package' name='org.ietf.jgss' version='0.0.0'/>
         <provided namespace='java.package' name='javax.sound.midi.spi' version='0.0.0'/>
@@ -1650,9 +1161,9 @@
         <provided namespace='java.package' name='java.lang.reflect' version='0.0.0'/>
         <provided namespace='java.package' name='java.security' version='0.0.0'/>
         <provided namespace='java.package' name='org.xml.sax.helpers' version='0.0.0'/>
+        <provided namespace='java.package' name='jdk.jshell' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.tools.attach' version='0.0.0'/>
         <provided namespace='java.package' name='javax.naming.ldap.spi' version='0.0.0'/>
-        <provided namespace='java.package' name='jdk.jshell' version='0.0.0'/>
         <provided namespace='java.package' name='javax.print.attribute.standard' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.jshell.tool' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.tools.jconsole' version='0.0.0'/>
@@ -1660,8 +1171,8 @@
         <provided namespace='java.package' name='jdk.security.jarsigner' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.security.auth' version='0.0.0'/>
         <provided namespace='java.package' name='javax.security.auth.kerberos' version='0.0.0'/>
-        <provided namespace='java.package' name='java.sql' version='0.0.0'/>
         <provided namespace='java.package' name='javax.crypto' version='0.0.0'/>
+        <provided namespace='java.package' name='java.sql' version='0.0.0'/>
         <provided namespace='java.package' name='java.util' version='0.0.0'/>
         <provided namespace='java.package' name='java.time.temporal' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio.channels' version='0.0.0'/>
@@ -1683,8 +1194,8 @@
         <provided namespace='java.package' name='javax.xml.crypto.dsig' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.tools.javac' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.jdi' version='0.0.0'/>
-        <provided namespace='java.package' name='com.sun.security.jgss' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio.charset.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='com.sun.security.jgss' version='0.0.0'/>
         <provided namespace='java.package' name='java.text.spi' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.spi' version='0.0.0'/>
         <provided namespace='java.package' name='javax.management.timer' version='0.0.0'/>
@@ -1707,8 +1218,8 @@
         <provided namespace='java.package' name='javax.swing.plaf.nimbus' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.nio.mapmode' version='0.0.0'/>
         <provided namespace='java.package' name='java.awt.event' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.swing.border' version='0.0.0'/>
         <provided namespace='java.package' name='javax.sql.rowset.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.swing.border' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.jfr.consumer' version='0.0.0'/>
         <provided namespace='java.package' name='javax.imageio.plugins.tiff' version='0.0.0'/>
         <provided namespace='java.package' name='javax.management.remote' version='0.0.0'/>
@@ -1719,8 +1230,8 @@
         <provided namespace='java.package' name='java.lang.runtime' version='0.0.0'/>
         <provided namespace='java.package' name='javax.security.sasl' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.security.auth.module' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.naming.ldap' version='0.0.0'/>
         <provided namespace='java.package' name='javax.xml.crypto.dom' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.naming.ldap' version='0.0.0'/>
         <provided namespace='java.package' name='java.time.zone' version='0.0.0'/>
         <provided namespace='java.package' name='netscape.javascript' version='0.0.0'/>
         <provided namespace='java.package' name='java.awt.im.spi' version='0.0.0'/>
@@ -1731,8 +1242,8 @@
         <provided namespace='java.package' name='javax.script' version='0.0.0'/>
         <provided namespace='java.package' name='java.lang.module' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.source.util' version='0.0.0'/>
-        <provided namespace='java.package' name='java.io' version='0.0.0'/>
         <provided namespace='java.package' name='javax.sql.rowset' version='0.0.0'/>
+        <provided namespace='java.package' name='java.io' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.jar' version='0.0.0'/>
         <provided namespace='java.package' name='javax.crypto.interfaces' version='0.0.0'/>
         <provided namespace='java.package' name='org.w3c.dom.ranges' version='0.0.0'/>
@@ -1771,6 +1282,93 @@
         <provided namespace='osgi.ee' name='JavaSE/compact3' version='21.0.0'/>
       </provides>
       <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
+    </unit>
+    <unit id='me.friwi.jcefmaven' version='141.0.10' singleton='false' generation='2'>
+      <update id='me.friwi.jcefmaven' range='[0.0.0,141.0.10)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Bundle derived from maven artifact me.friwi:jcefmaven:141.0.10'/>
+        <property name='maven-wrapped-groupId' value='me.friwi'/>
+        <property name='maven-wrapped-artifactId' value='jcefmaven'/>
+        <property name='maven-wrapped-version' value='141.0.10'/>
+        <property name='maven-wrapped-classifier' value=''/>
+      </properties>
+      <provides size='13'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcefmaven' version='141.0.10'/>
+        <provided namespace='osgi.bundle' name='me.friwi.jcefmaven' version='141.0.10'/>
+        <provided namespace='java.package' name='me.friwi.jcefmaven' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='org.cef,org.cef.callback,org.cef.handler' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.platform' version='141.0.10'/>
+        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.progress' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='me.friwi.jcefmaven' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.step.check' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='me.friwi.jcefmaven' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.step.extract' version='141.0.10'/>
+        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.step.fetch' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='me.friwi.jcefmaven' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.step.init' version='141.0.10'>
+          <properties size='1'>
+            <property name='java.package.directive.uses' value='me.friwi.jcefmaven,org.cef' type='List'/>
+          </properties>
+        </provided>
+        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.util' version='141.0.10'/>
+        <provided namespace='java.package' name='me.friwi.jcefmaven.impl.util.macos' version='141.0.10'/>
+        <provided namespace='osgi.identity' name='me.friwi.jcefmaven' version='141.0.10'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='17'>
+        <required namespace='java.package' name='com.google.gson' range='[2.11.0,3.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.io' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.lang' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.lang.invoke' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.net' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.nio.file' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util.function' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util.logging' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='java.util.zip' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.commons.compress.archivers.tar' range='[1.27.0,2.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.apache.commons.compress.compressors.gzip' range='[1.27.0,2.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.cef' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.cef.callback' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.cef.handler' range='0.0.0' optional='true' greedy='false'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
+          <description>
+            me.friwi.jcefmaven
+          </description>
+        </requiredProperties>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcefmaven.source' range='[141.0.10,141.0.10]' optional='true'>
+          <filter>
+            (org.eclipse.update.install.sources=true)
+          </filter>
+        </required>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='me.friwi.jcefmaven' version='141.0.10'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: me.friwi.jcefmaven&#xA;Bundle-Version: 141.0.10&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
     </unit>
   </units>
 </repository>
