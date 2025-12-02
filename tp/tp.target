@@ -2,7 +2,7 @@
 <?pde version="3.8"?>
 <target name="tp">
   <locations>
-    <location includeDependencyDepth="0" includeDependencyScopes="compile,runtime" label="JCEF Windows" missingManifest="generate" type="Maven">
+    <location includeDependencyDepth="0" includeDependencyScopes="compile,runtime" label="JCef Maven" missingManifest="generate" type="Maven">
       <dependencies>
         <dependency>
           <groupId>me.friwi</groupId>
@@ -20,7 +20,25 @@ Import-Package:        *;resolution:=optional
 Export-Package:        *;version="${version}";-noimport:=true
 ]]></instructions>
     </location>
-    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCEF Windows Natives" missingManifest="generate" type="Maven">
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCef API" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>me.friwi</groupId>
+          <artifactId>jcef-api</artifactId>
+          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+      <instructions><![CDATA[
+Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
+version:               141.0.10
+Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
+Bundle-Version:        ${version}
+Import-Package:        *;resolution:=optional
+Export-Package:        *;version="${version}";-noimport:=true
+]]></instructions>
+    </location>
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCef Natives For Windows AMD64" missingManifest="generate" type="Maven">
       <dependencies>
         <dependency>
           <groupId>me.friwi</groupId>
@@ -38,11 +56,83 @@ Import-Package:        *;resolution:=optional
 Export-Package:        *;version="${version}";-noimport:=true
 ]]></instructions>
     </location>
-    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCEF API" missingManifest="generate" type="Maven">
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCef Natives For Windows ARM64" missingManifest="generate" type="Maven">
       <dependencies>
         <dependency>
           <groupId>me.friwi</groupId>
-          <artifactId>jcef-api</artifactId>
+          <artifactId>jcef-natives-windows-arm64</artifactId>
+          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+      <instructions><![CDATA[
+Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
+version:               141.0.10
+Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
+Bundle-Version:        ${version}
+Import-Package:        *;resolution:=optional
+Export-Package:        *;version="${version}";-noimport:=true
+]]></instructions>
+    </location>
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCef Natives For Linux AMD64" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>me.friwi</groupId>
+          <artifactId>jcef-natives-linux-amd64</artifactId>
+          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+      <instructions><![CDATA[
+Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
+version:               141.0.10
+Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
+Bundle-Version:        ${version}
+Import-Package:        *;resolution:=optional
+Export-Package:        *;version="${version}";-noimport:=true
+]]></instructions>
+    </location>
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCef Natives For Linux ARM64" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>me.friwi</groupId>
+          <artifactId>jcef-natives-linux-arm64</artifactId>
+          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+      <instructions><![CDATA[
+Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
+version:               141.0.10
+Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
+Bundle-Version:        ${version}
+Import-Package:        *;resolution:=optional
+Export-Package:        *;version="${version}";-noimport:=true
+]]></instructions>
+    </location>
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCef Natives For MacOSX AMD64" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>me.friwi</groupId>
+          <artifactId>jcef-natives-macosx-amd64</artifactId>
+          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+      <instructions><![CDATA[
+Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
+version:               141.0.10
+Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
+Bundle-Version:        ${version}
+Import-Package:        *;resolution:=optional
+Export-Package:        *;version="${version}";-noimport:=true
+]]></instructions>
+    </location>
+    <location includeDependencyDepth="infinite" includeDependencyScopes="compile,runtime" label="JCef Natives For MacOSX ARM64" missingManifest="generate" type="Maven">
+      <dependencies>
+        <dependency>
+          <groupId>me.friwi</groupId>
+          <artifactId>jcef-natives-macosx-arm64</artifactId>
           <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
           <type>jar</type>
         </dependency>

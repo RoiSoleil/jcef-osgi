@@ -22,11 +22,6 @@ jobs:
            key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
            restore-keys: |
              ${{ runner.os }}-maven-
-      -  name: Patch JCEF version
-         working-directory: ./scripts
-         run: |
-            ./patch-jcef.sh
-         shell: bash
       -  name: Build
          run: |
             mvn --batch-mode clean install
