@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='org.eclipse.jcef:tp:eclipse-target-definition:1.0.0-SNAPSHOT' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='1'>
-    <property name='p2.timestamp' value='1757400754958'/>
+    <property name='p2.timestamp' value='1764661611505'/>
   </properties>
   <mappings size='3'>
     <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
@@ -47,7 +47,7 @@
         <property name='maven-wrapped-artifactId' value='gluegen-rt'/>
         <property name='maven-wrapped-version' value='2.4.0'/>
         <property name='maven-wrapped-classifier' value=''/>
-        <property name='download.size' value='413915'/>
+        <property name='download.size' value='413917'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='me.friwi.jcef-api' version='135.0.20'>
@@ -96,7 +96,7 @@
         <property name='maven-wrapped-artifactId' value='jcef-natives-windows-amd64'/>
         <property name='maven-wrapped-version' value='135.0.20'/>
         <property name='maven-wrapped-classifier' value=''/>
-        <property name='download.size' value='140639574'/>
+        <property name='download.size' value='140639576'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.apache.commons.commons-io' version='2.16.1'>
