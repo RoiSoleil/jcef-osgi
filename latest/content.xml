@@ -2,7 +2,7 @@
 <?metadataRepository version='1.2.0'?>
 <repository name='org.eclipse.jcef:tp:eclipse-target-definition:1.0.0-SNAPSHOT' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='1'>
-    <property name='p2.timestamp' value='1764664086614'/>
+    <property name='p2.timestamp' value='1769548408637'/>
   </properties>
   <units size='19'>
     <unit id='me.friwi.gluegen-rt' version='141.0.10' singleton='false' generation='2'>
@@ -144,6 +144,44 @@
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='generated.target.category.af61979d-7e32-42ac-a10e-1bdc3a85a070' version='1.0.0.EBD-7wcDQD'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JCef API'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.af61979d-7e32-42ac-a10e-1bdc3a85a070' version='1.0.0.EBD-7wcDQD'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.gluegen-rt' range='[141.0.10,141.0.10]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jogl-all' range='[141.0.10,141.0.10]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-api' range='[141.0.10,141.0.10]'/>
+      </requires>
+    </unit>
+    <unit id='generated.target.category.a8295c75-5135-4dd2-b098-d71c6fad1811' version='1.0.0.AP-7IcDo2'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JCef Natives For Linux ARM64'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.a8295c75-5135-4dd2-b098-d71c6fad1811' version='1.0.0.AP-7IcDo2'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-linux-arm64' range='[141.0.10,141.0.10]'/>
+      </requires>
+    </unit>
+    <unit id='generated.target.category.472e95f7-9354-4219-97a3-3a3d945667a3' version='1.0.0.AP-7IcDrS'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JCef Natives For Windows ARM64'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.472e95f7-9354-4219-97a3-3a3d945667a3' version='1.0.0.AP-7IcDrS'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-windows-arm64' range='[141.0.10,141.0.10]'/>
+      </requires>
     </unit>
     <unit id='me.friwi.jcef-natives-windows-amd64' version='141.0.10' singleton='false' generation='2'>
       <update id='me.friwi.jcef-natives-windows-amd64' range='[0.0.0,141.0.10)' severity='0'/>
@@ -926,30 +964,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='generated.target.category.9e24f646-1616-418d-8a38-3a56f4de165a' version='1.0.0.AP-7IcDnp'>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='JCef Natives For Linux AMD64'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.9e24f646-1616-418d-8a38-3a56f4de165a' version='1.0.0.AP-7IcDnp'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-linux-amd64' range='[141.0.10,141.0.10]'/>
-      </requires>
-    </unit>
-    <unit id='generated.target.category.58a677f5-1766-46b4-863f-8f191337b3ec' version='1.0.0.AP-7IcDpE'>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='JCef Natives For MacOSX AMD64'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.58a677f5-1766-46b4-863f-8f191337b3ec' version='1.0.0.AP-7IcDpE'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-macosx-amd64' range='[141.0.10,141.0.10]'/>
-      </requires>
-    </unit>
     <unit id='me.friwi.jcef-api' version='141.0.10' singleton='false' generation='2'>
       <update id='me.friwi.jcef-api' range='[0.0.0,141.0.10)' severity='0'/>
       <properties size='5'>
@@ -1048,6 +1062,18 @@
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='generated.target.category.320fdfa7-64d2-44b7-99b4-28bf8035725b' version='1.0.0.AP-7IcDnp'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JCef Natives For Linux AMD64'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.320fdfa7-64d2-44b7-99b4-28bf8035725b' version='1.0.0.AP-7IcDnp'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-linux-amd64' range='[141.0.10,141.0.10]'/>
+      </requires>
     </unit>
     <unit id='me.friwi.jcefmaven' version='141.0.10' singleton='false' generation='2'>
       <update id='me.friwi.jcefmaven' range='[0.0.0,141.0.10)' severity='0'/>
@@ -1181,52 +1207,16 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='generated.target.category.b5477fda-26b1-4e79-b47e-55ad4fb2191c' version='1.0.0.AP-7IcDSz'>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='JCef Maven'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.b5477fda-26b1-4e79-b47e-55ad4fb2191c' version='1.0.0.AP-7IcDSz'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcefmaven' range='[141.0.10,141.0.10]'/>
-      </requires>
-    </unit>
-    <unit id='generated.target.category.05e8b067-0a01-462e-84cb-9bdadeef23e1' version='1.0.0.AP-7IcDo2'>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='JCef Natives For Linux ARM64'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.05e8b067-0a01-462e-84cb-9bdadeef23e1' version='1.0.0.AP-7IcDo2'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-linux-arm64' range='[141.0.10,141.0.10]'/>
-      </requires>
-    </unit>
-    <unit id='generated.target.category.cf38ebf2-9bed-423d-8bee-73bcf0d8b88b' version='1.0.0.AP-7IcDpS'>
+    <unit id='generated.target.category.568cf1f2-3985-488f-b34a-e6fd6f80e84e' version='1.0.0.AP-7IcDpS'>
       <properties size='2'>
         <property name='org.eclipse.equinox.p2.name' value='JCef Natives For MacOSX ARM64'/>
         <property name='org.eclipse.equinox.p2.type.category' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.cf38ebf2-9bed-423d-8bee-73bcf0d8b88b' version='1.0.0.AP-7IcDpS'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.568cf1f2-3985-488f-b34a-e6fd6f80e84e' version='1.0.0.AP-7IcDpS'/>
       </provides>
       <requires size='1'>
         <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-macosx-arm64' range='[141.0.10,141.0.10]'/>
-      </requires>
-    </unit>
-    <unit id='generated.target.category.ad4ff1f6-d6d4-48fb-a211-670bf9de2cad' version='1.0.0.AP-7IcDrS'>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='JCef Natives For Windows ARM64'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.ad4ff1f6-d6d4-48fb-a211-670bf9de2cad' version='1.0.0.AP-7IcDrS'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-windows-arm64' range='[141.0.10,141.0.10]'/>
       </requires>
     </unit>
     <unit id='me.friwi.jcef-natives-linux-amd64' version='141.0.10' singleton='false' generation='2'>
@@ -1375,9 +1365,9 @@
         <provided namespace='java.package' name='java.awt.desktop' version='0.0.0'/>
         <provided namespace='java.package' name='javax.imageio.plugins.jpeg' version='0.0.0'/>
         <provided namespace='java.package' name='javax.lang.model.type' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.xml.transform.dom' version='0.0.0'/>
         <provided namespace='java.package' name='java.security.cert' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.zip' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.transform.dom' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio.file' version='0.0.0'/>
         <provided namespace='java.package' name='org.w3c.dom.views' version='0.0.0'/>
         <provided namespace='java.package' name='java.time' version='0.0.0'/>
@@ -1393,16 +1383,16 @@
         <provided namespace='java.package' name='com.sun.net.httpserver' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.jdi.connect' version='0.0.0'/>
         <provided namespace='java.package' name='org.w3c.dom.events' version='0.0.0'/>
-        <provided namespace='java.package' name='java.lang.foreign' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.text.html' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.plaf' version='0.0.0'/>
+        <provided namespace='java.package' name='java.lang.foreign' version='0.0.0'/>
         <provided namespace='java.package' name='java.awt.datatransfer' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.jdi.event' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.dynalink' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.plaf.metal' version='0.0.0'/>
         <provided namespace='java.package' name='java.net.spi' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.xml' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.colorchooser' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.logging' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.dynalink.support' version='0.0.0'/>
         <provided namespace='java.package' name='javax.security.auth.x500' version='0.0.0'/>
@@ -1422,16 +1412,16 @@
         <provided namespace='java.package' name='javax.transaction.xa' version='0.0.0'/>
         <provided namespace='java.package' name='javax.xml.transform.stax' version='0.0.0'/>
         <provided namespace='java.package' name='org.w3c.dom.traversal' version='0.0.0'/>
-        <provided namespace='java.package' name='jdk.swing.interop' version='0.0.0'/>
         <provided namespace='java.package' name='java.awt' version='0.0.0'/>
+        <provided namespace='java.package' name='jdk.swing.interop' version='0.0.0'/>
         <provided namespace='java.package' name='java.text' version='0.0.0'/>
-        <provided namespace='java.package' name='com.sun.management' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.undo' version='0.0.0'/>
+        <provided namespace='java.package' name='com.sun.management' version='0.0.0'/>
         <provided namespace='java.package' name='javax.xml.transform.stream' version='0.0.0'/>
         <provided namespace='java.package' name='javax.xml.datatype' version='0.0.0'/>
         <provided namespace='java.package' name='javax.print' version='0.0.0'/>
-        <provided namespace='java.package' name='org.w3c.dom.html' version='0.0.0'/>
         <provided namespace='java.package' name='javax.security.auth.login' version='0.0.0'/>
+        <provided namespace='java.package' name='org.w3c.dom.html' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.security.auth.login' version='0.0.0'/>
         <provided namespace='java.package' name='java.rmi' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.jdi.connect.spi' version='0.0.0'/>
@@ -1456,8 +1446,8 @@
         <provided namespace='java.package' name='javax.swing.tree' version='0.0.0'/>
         <provided namespace='java.package' name='javax.net' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.function' version='0.0.0'/>
-        <provided namespace='java.package' name='jdk.dynalink.linker' version='0.0.0'/>
         <provided namespace='java.package' name='java.awt.image.renderable' version='0.0.0'/>
+        <provided namespace='java.package' name='jdk.dynalink.linker' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.nio.file' version='0.0.0'/>
         <provided namespace='java.package' name='org.w3c.dom.ls' version='0.0.0'/>
         <provided namespace='java.package' name='javax.smartcardio' version='0.0.0'/>
@@ -1477,22 +1467,22 @@
         <provided namespace='java.package' name='java.util.concurrent.atomic' version='0.0.0'/>
         <provided namespace='java.package' name='javax.rmi.ssl' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.event' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.management.openmbean' version='0.0.0'/>
         <provided namespace='java.package' name='java.awt.color' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.openmbean' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.text.rtf' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.javadoc.doclet' version='0.0.0'/>
         <provided namespace='java.package' name='java.awt.print' version='0.0.0'/>
         <provided namespace='java.package' name='javax.xml.crypto' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing.plaf.multi' version='0.0.0'/>
-        <provided namespace='java.package' name='java.nio.channels.spi' version='0.0.0'/>
         <provided namespace='java.package' name='javax.imageio.event' version='0.0.0'/>
+        <provided namespace='java.package' name='java.nio.channels.spi' version='0.0.0'/>
         <provided namespace='java.package' name='javax.net.ssl' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.xml.stream.events' version='0.0.0'/>
         <provided namespace='java.package' name='java.rmi.registry' version='0.0.0'/>
-        <provided namespace='java.package' name='com.sun.java.accessibility.util' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.xml.stream.events' version='0.0.0'/>
         <provided namespace='java.package' name='javax.print.attribute' version='0.0.0'/>
-        <provided namespace='java.package' name='java.nio.file.attribute' version='0.0.0'/>
+        <provided namespace='java.package' name='com.sun.java.accessibility.util' version='0.0.0'/>
         <provided namespace='java.package' name='javax.swing' version='0.0.0'/>
+        <provided namespace='java.package' name='java.nio.file.attribute' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.management.jfr' version='0.0.0'/>
         <provided namespace='java.package' name='java.lang.constant' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio' version='0.0.0'/>
@@ -1507,9 +1497,9 @@
         <provided namespace='java.package' name='java.lang.reflect' version='0.0.0'/>
         <provided namespace='java.package' name='java.security' version='0.0.0'/>
         <provided namespace='java.package' name='org.xml.sax.helpers' version='0.0.0'/>
-        <provided namespace='java.package' name='jdk.jshell' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.tools.attach' version='0.0.0'/>
         <provided namespace='java.package' name='javax.naming.ldap.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='jdk.jshell' version='0.0.0'/>
         <provided namespace='java.package' name='javax.print.attribute.standard' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.jshell.tool' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.tools.jconsole' version='0.0.0'/>
@@ -1542,8 +1532,8 @@
         <provided namespace='java.package' name='com.sun.jdi' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio.charset.spi' version='0.0.0'/>
         <provided namespace='java.package' name='com.sun.security.jgss' version='0.0.0'/>
-        <provided namespace='java.package' name='java.text.spi' version='0.0.0'/>
         <provided namespace='java.package' name='java.util.spi' version='0.0.0'/>
+        <provided namespace='java.package' name='java.text.spi' version='0.0.0'/>
         <provided namespace='java.package' name='javax.management.timer' version='0.0.0'/>
         <provided namespace='java.package' name='java.security.spec' version='0.0.0'/>
         <provided namespace='java.package' name='java.nio.file.spi' version='0.0.0'/>
@@ -1567,8 +1557,8 @@
         <provided namespace='java.package' name='javax.swing.border' version='0.0.0'/>
         <provided namespace='java.package' name='javax.sql.rowset.spi' version='0.0.0'/>
         <provided namespace='java.package' name='jdk.jfr.consumer' version='0.0.0'/>
-        <provided namespace='java.package' name='javax.management.remote' version='0.0.0'/>
         <provided namespace='java.package' name='javax.imageio.plugins.tiff' version='0.0.0'/>
+        <provided namespace='java.package' name='javax.management.remote' version='0.0.0'/>
         <provided namespace='java.package' name='org.xml.sax.ext' version='0.0.0'/>
         <provided namespace='java.package' name='sun.reflect' version='0.0.0'/>
         <provided namespace='java.package' name='javax.lang.model.util' version='0.0.0'/>
@@ -1629,30 +1619,40 @@
       </provides>
       <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
     </unit>
-    <unit id='generated.target.category.c423401b-cae7-48b0-ada3-720bd67dbadd' version='1.0.0.AP-7IcDrE'>
+    <unit id='generated.target.category.b1eaf2ad-077c-40d5-bf1b-0a8c8e16ec2d' version='1.0.0.AP-7IcDpE'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JCef Natives For MacOSX AMD64'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.b1eaf2ad-077c-40d5-bf1b-0a8c8e16ec2d' version='1.0.0.AP-7IcDpE'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-macosx-amd64' range='[141.0.10,141.0.10]'/>
+      </requires>
+    </unit>
+    <unit id='generated.target.category.db4beb57-48b2-4531-bacc-8bfa1aff3361' version='1.0.0.AP-7IcDSz'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='JCef Maven'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.db4beb57-48b2-4531-bacc-8bfa1aff3361' version='1.0.0.AP-7IcDSz'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcefmaven' range='[141.0.10,141.0.10]'/>
+      </requires>
+    </unit>
+    <unit id='generated.target.category.37dd4b17-8a61-4537-8524-3fda519dad99' version='1.0.0.AP-7IcDrE'>
       <properties size='2'>
         <property name='org.eclipse.equinox.p2.name' value='JCef Natives For Windows AMD64'/>
         <property name='org.eclipse.equinox.p2.type.category' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.c423401b-cae7-48b0-ada3-720bd67dbadd' version='1.0.0.AP-7IcDrE'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.37dd4b17-8a61-4537-8524-3fda519dad99' version='1.0.0.AP-7IcDrE'/>
       </provides>
       <requires size='1'>
         <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-natives-windows-amd64' range='[141.0.10,141.0.10]'/>
-      </requires>
-    </unit>
-    <unit id='generated.target.category.53adeb96-5d85-4149-8371-c45b28e479f5' version='1.0.0.EBD-7wcDQD'>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='JCef API'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='generated.target.category.53adeb96-5d85-4149-8371-c45b28e479f5' version='1.0.0.EBD-7wcDQD'/>
-      </provides>
-      <requires size='3'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.gluegen-rt' range='[141.0.10,141.0.10]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jogl-all' range='[141.0.10,141.0.10]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='me.friwi.jcef-api' range='[141.0.10,141.0.10]'/>
       </requires>
     </unit>
   </units>
