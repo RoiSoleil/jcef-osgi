@@ -7,13 +7,13 @@
         <dependency>
           <groupId>me.friwi</groupId>
           <artifactId>jcefmaven</artifactId>
-          <version>141.0.10</version>
+          <version>143.0.14</version>
           <type>jar</type>
         </dependency>
       </dependencies>
       <instructions><![CDATA[
 Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
-version:               ${version_cleanup;${mvnVersion}}
+version:               143.0.14
 Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
 Bundle-Version:        ${version}
 Import-Package:        *;resolution:=optional
@@ -25,13 +25,13 @@ Export-Package:        *;version="${version}";-noimport:=true
         <dependency>
           <groupId>me.friwi</groupId>
           <artifactId>jcef-api</artifactId>
-          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <version>jcef-cffac27+cef-143.0.14+gdd46a37+chromium-143.0.7499.193</version>
           <type>jar</type>
         </dependency>
       </dependencies>
       <instructions><![CDATA[
 Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
-version:               141.0.10
+version:               143.0.14
 Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
 Bundle-Version:        ${version}
 Import-Package:        *;resolution:=optional
@@ -43,13 +43,13 @@ Export-Package:        *;version="${version}";-noimport:=true
         <dependency>
           <groupId>me.friwi</groupId>
           <artifactId>jcef-natives-windows-amd64</artifactId>
-          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <version>jcef-cffac27+cef-143.0.14+gdd46a37+chromium-143.0.7499.193</version>
           <type>jar</type>
         </dependency>
       </dependencies>
       <instructions><![CDATA[
 Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
-version:               141.0.10
+version:               143.0.14
 Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
 Bundle-Version:        ${version}
 Import-Package:        *;resolution:=optional
@@ -61,13 +61,13 @@ Export-Package:        *;version="${version}";-noimport:=true
         <dependency>
           <groupId>me.friwi</groupId>
           <artifactId>jcef-natives-windows-arm64</artifactId>
-          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <version>jcef-cffac27+cef-143.0.14+gdd46a37+chromium-143.0.7499.193</version>
           <type>jar</type>
         </dependency>
       </dependencies>
       <instructions><![CDATA[
 Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
-version:               141.0.10
+version:               143.0.14
 Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
 Bundle-Version:        ${version}
 Import-Package:        *;resolution:=optional
@@ -79,13 +79,13 @@ Export-Package:        *;version="${version}";-noimport:=true
         <dependency>
           <groupId>me.friwi</groupId>
           <artifactId>jcef-natives-linux-amd64</artifactId>
-          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <version>jcef-cffac27+cef-143.0.14+gdd46a37+chromium-143.0.7499.193</version>
           <type>jar</type>
         </dependency>
       </dependencies>
       <instructions><![CDATA[
 Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
-version:               141.0.10
+version:               143.0.14
 Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
 Bundle-Version:        ${version}
 Import-Package:        *;resolution:=optional
@@ -97,13 +97,13 @@ Export-Package:        *;version="${version}";-noimport:=true
         <dependency>
           <groupId>me.friwi</groupId>
           <artifactId>jcef-natives-linux-arm64</artifactId>
-          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <version>jcef-cffac27+cef-143.0.14+gdd46a37+chromium-143.0.7499.193</version>
           <type>jar</type>
         </dependency>
       </dependencies>
       <instructions><![CDATA[
 Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
-version:               141.0.10
+version:               143.0.14
 Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
 Bundle-Version:        ${version}
 Import-Package:        *;resolution:=optional
@@ -115,13 +115,13 @@ Export-Package:        *;version="${version}";-noimport:=true
         <dependency>
           <groupId>me.friwi</groupId>
           <artifactId>jcef-natives-macosx-amd64</artifactId>
-          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <version>jcef-cffac27+cef-143.0.14+gdd46a37+chromium-143.0.7499.193</version>
           <type>jar</type>
         </dependency>
       </dependencies>
       <instructions><![CDATA[
 Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
-version:               141.0.10
+version:               143.0.14
 Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
 Bundle-Version:        ${version}
 Import-Package:        *;resolution:=optional
@@ -133,13 +133,13 @@ Export-Package:        *;version="${version}";-noimport:=true
         <dependency>
           <groupId>me.friwi</groupId>
           <artifactId>jcef-natives-macosx-arm64</artifactId>
-          <version>jcef-2caef5a+cef-141.0.10+g1d65b0d+chromium-141.0.7390.123</version>
+          <version>jcef-cffac27+cef-143.0.14+gdd46a37+chromium-143.0.7499.193</version>
           <type>jar</type>
         </dependency>
       </dependencies>
       <instructions><![CDATA[
 Bundle-Name:           Bundle derived from maven artifact ${mvnGroupId}:${mvnArtifactId}:${mvnVersion}
-version:               141.0.10
+version:               143.0.14
 Bundle-SymbolicName:   ${mvnGroupId}.${mvnArtifactId}
 Bundle-Version:        ${version}
 Import-Package:        *;resolution:=optional
